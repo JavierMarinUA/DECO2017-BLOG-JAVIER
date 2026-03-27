@@ -8,4 +8,4 @@ tags:
   - tag2
   - tag3
 ---
-This is just a test to see if everything is working well.
+This is just a test to see if everything is working well. Plus the action!
