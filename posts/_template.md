@@ -1,11 +1,11 @@
 ---
-title: First Blog
-date: 2026-03-27
-author: Javier Marin Ferrandiz
-summary: First blog and propper func.
+title: Post Title
+date: 2026-02-14
+author: Your Name
+summary: Short description
 tags:
   - tag1
   - tag2
   - tag3
 ---
-This is just a test to see if everything is working well. Plus the action!
+Write your content here.
