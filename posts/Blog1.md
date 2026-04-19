@@ -1,5 +1,5 @@
 ---
-title: Setup of the project - Discovery and Ideation
+title: 1. Setup of the project - Discovery and Ideation
 date: 2026-04-17
 author: Javier Marin Ferrandiz
 summary: Setup and discovering the project
