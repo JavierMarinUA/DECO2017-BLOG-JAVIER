@@ -1,6 +1,6 @@
 ---
 title: 2. Group meeting and definition of the main idea
-date: 2026-04-19
+date: 2026-04-21
 author: Javier Marin Ferrandiz
 summary: We defined the main idea of the project and we walked through all the main aspects of our unique feature.
 tags:
@@ -22,3 +22,13 @@ Following this method, users and members of the community will see their progres
 
 We also talked a bit about how different profiles in the app/website would look if you want a more sport-focused profile or a learning one, but we still have to ideate all the details of the app itself. The main goal here was to have the idea and work in the same way.
 
+Finnaly, we discussed and wrote the 4 questions of our project:
+
+1. What community is your Bla-Bla hub for?
+2. What is the core feature that makes this hub worth building, and why does this community need it?
+3. What do users need to be able to do to make that feature work?
+4. What does the system need to handle behind the scenes to support that?
+
+The information written in the paper gave us the same approach to the project. We are now at the same point, and both of us know what we are aiming for.
+
+Our next step in the project is to create the Functional Requirements in order to clearly define what we are going to do with the app and specify its exact functionalities.
