@@ -1,43 +1,44 @@
 ---
-title: 3. Wireframing and initial visualization of the product
-date: 2026-04-29
+title: 4. Database definition and system structure
+date: 2026-05-01
 author: Javier Marin Ferrandiz
-summary: We created the first wireframes and explored how the app could look in a mobile format
+summary: We defined the database structure through DDD tables and an ERD diagram
 tags:
   - Design
-  - Wireframing
+  - Database
+  - Architecture
   - Ideation
-  - Prototyping
 ---
 
-For this third blog, we focused on translating our main idea into something more visual. After aligning on the concept in the previous session, we had a meeting where we started sketching the structure of the platform and how users would interact with it.
+For this fourth blog, we focused on defining the internal structure of the system. After having a clear idea of the product and its main features, we had a meeting where we worked on how the data of the application would be organized and managed.
 
-We began by creating low-fidelity wireframes to define the main sections of the website. The goal here was not to design in detail, but to understand how everything connects and to make sure we both had the same mental model of the product.
+We started by creating the DDD (Data Definition Document), where we defined the main tables that will be part of the database. These tables represent the core elements of the application, such as the avatar, stats, and tasks.
 
-![Wireframe](/DECO2017-BLOG-JAVIER/images/wireframes.jpeg)
-![Wireframe](/DECO2017-BLOG-JAVIER/images/tabledealgo.jpeg)
+The purpose of this step was not only to list attributes, but to clearly understand what kind of information each part of the system needs to store and how it contributes to the overall experience.
 
-We structured the platform around three main areas:
+## Main tables definition
 
-- **Posts**, where users can share their progress and interact with others.
-- **Avatar**, which represents the user and their evolution based on real-life habits.
-- **Challenges**, where users can create and complete tasks that impact their stats.
+![DDD Tables](../images/tabla1.png)
 
-Each section includes basic actions like creating and editing content, viewing progress, and interacting with the system. These sketches helped us clearly see how the core feature — turning real-life actions into game-like progression — fits into the overall experience.
+Through THIS table, we defined key attributes like the avatar’s name, rank, level, stats, tasks, image and streak. This helped us visualize how user progress is stored and updated.
 
-At the same time, we also explored how the user flow would look from the beginning. We outlined the entry point (landing page), sign-up process, and initial setup, including choosing an avatar. This helped us understand the onboarding experience and how users would first engage with the platform.
+We also refined some of these tables to make them more consistent and better aligned with the idea of the product.
 
-In parallel to this, I worked on a visual example outside of the main wireframing process to better imagine how this concept could translate into a mobile app. Using Codex, I created some UI screens that simulate how the system might look in a more polished and interactive format.
+## Refined structure
 
-These screens include:
-- A character profile with stats like strength, agility, and intelligence.
-- A list of daily challenges with rewards and progression.
-- A progression view showing weekly activity and accumulated experience.
+![DDD Tables](../images/tabla2.png)
+![DDD Tables](../images/tabla3.png)
 
-![Wireframe](/DECO2017-BLOG-JAVIER/images/app1.png)
-![Wireframe](/DECO2017-BLOG-JAVIER/images/app2.png)
-![Wireframe](/DECO2017-BLOG-JAVIER/images/app3.png)
+This refinement allowed us to simplify some relationships and make the system easier to understand from a development perspective.
 
-It’s important to note that this is not part of the official design yet, but rather a reference to help us visualize the potential of the idea and guide future design decisions.
+After defining the tables, we moved on to creating the ERD (Entity Relationship Diagram), which represents how all these elements are connected within the database.
 
-Overall, this session was mainly about clarity. The wireframes allowed us to confirm that the idea is viable from a structural point of view, and the visual examples helped reinforce the motivation behind the concept.
+## Entity Relationship Diagram
+
+![ERD](../images/ERS.jpeg)
+
+In this diagram, we can see how different entities like **User**, **Avatar**, **Stats**, **Tasks**, and **Posts** are related to each other. This was a key step because it helped us understand how the system will manage interactions between users and their data.
+
+For example, we can clearly see how a user is linked to an avatar, how tasks contribute to stats, and how posts are connected to user activity. This gives us a much clearer idea of how the backend should handle all these relationships.
+
+Overall, this session was mainly focused on building a solid foundation for the system. By defining both the tables and their relationships, we now have a much clearer vision of how the database will work behind the scenes.
