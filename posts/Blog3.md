@@ -14,8 +14,8 @@ For this third blog, we focused on translating our main idea into something more
 
 We began by creating low-fidelity wireframes to define the main sections of the website. The goal here was not to design in detail, but to understand how everything connects and to make sure we both had the same mental model of the product.
 
-![Wireframe](images/wireframes.jpeg)
-![Wireframe](images/tabledealgo.jpeg)
+![Wireframe](../images/wireframes.jpeg)
+![Wireframe](../images/tabledealgo.jpeg)
 
 We structured the platform around three main areas:
 
@@ -34,9 +34,9 @@ These screens include:
 - A list of daily challenges with rewards and progression.
 - A progression view showing weekly activity and accumulated experience.
 
-![Wireframe](images/app1.png)
-![Wireframe](images/app2.png)
-![Wireframe](images/app3.png)
+![Wireframe](../images/app1.png)
+![Wireframe](../images/app2.png)
+![Wireframe](../images/app3.png)
 
 It’s important to note that this is not part of the official design yet, but rather a reference to help us visualize the potential of the idea and guide future design decisions.
 
