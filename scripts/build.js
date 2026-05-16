@@ -36,6 +36,10 @@ function applyTemplate(template, replacements) {
   return output;
 }
 
+function normalizeAssetPaths(markdown) {
+  return markdown.replaceAll("../images/", "images/");
+}
+
 /* Create a page for each blog post */
 const posts = [];
 
@@ -47,7 +51,7 @@ for (const file of fs.readdirSync(POSTS_DIR)) {
 
   validateFrontMatter(file, data);
 
-  const html = marked(content);
+  const html = marked(normalizeAssetPaths(content));
   const slug = file.replace(".md", "");
 
   const template = fs.readFileSync("templates/post.html", "utf8");
@@ -104,6 +108,7 @@ fs.writeFileSync(`${DIST_DIR}/index.html`, index);
 
 // Simple Node.js built-in method:
 fs.cpSync("assets", `${DIST_DIR}/assets`, { recursive: true });
+fs.cpSync("images", `${DIST_DIR}/images`, { recursive: true });
 
 
 console.log(chalk.green("✔ Build complete"));
