@@ -39,6 +39,15 @@ article img {
   object-fit: contain;
 }
 
+article p:has(> img) {
+  text-align: center;
+}
+
+article p > img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 span.tag {
   border: light-dark(var(--light-accent), var(--dark-accent)) 1px solid;
   border-radius: 0.5rem;
