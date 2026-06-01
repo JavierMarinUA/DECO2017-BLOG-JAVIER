@@ -88,3 +88,10 @@ We changed the way the website looks and reduced the navigation to just two page
 Thanks to one of the tutorials, we added an API that shows different motivational sentences each time the user refreshes the website or clicks the refresh button. This feature is called Daily Sparks, and it adds another functional requirement to the web application.
 
 I think we did a very good job overall. We made some changes from the first model of the website while keeping the main functional requirements and adding new ones. I think those changes were positive because they resulted in a cleaner and clearer website for the user.
+
+
+## Project Walkthrough
+
+As a final support resource, I also prepared a walkthrough of the complete project. This video shows the main flow of PopKorner and can be used to understand the website in case the GitHub deployment does not work correctly or the live version cannot be accessed.
+
+[Project walkthrough link](https://drive.google.com/file/d/1tf76MGHyB4BL36_3ha0KD5QzUy7dJ8jp/view?usp=sharing)
